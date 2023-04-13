@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    {{>header_links}}
+    
+    <title>Weather</title>
+</head>
+
+<body>
+    {{>navbar}}
+
+    <!-- Main Header -->
+    <div class="container-fluid main_header">
+        <div class="row">
+            <div class="col-md-10 col-12 mx-auto">
+                <div class="row">
+                    <!-- Left side div -->
+                    <div class="col-md-6 col-12 main_header_left align-items-center">
+                        <figure>
+                            <img src="Images/about.png" alt="About Image" class="img-fluid" title="About Me">
+                        </figure>
+                    </div>
+                    <!-- Right Side div -->
+                    <div class="col-md-6 col-12 main_header_right">
+                        <h1 class="name">Hi! Roheena here!</h1>
+                        <p class="about_style">I am interested in <span class="text_clr">Web Development</span> and try making various websites to learn the methods well.</p>
+                        <p class="about_style">This is a weather website where you can check the weather of your city from the <a href="/weather">Weather Page </a></p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    {{>footer}}
+
+</body>
+
+</html>
