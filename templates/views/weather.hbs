@@ -28,8 +28,8 @@
 
                 <div class="tempInformation">
                     <div class="top_layer">
-                        <p id="day">Tuesday</p>
-                        <p id="todayDate">3rd April</p>
+                        <p id="day">Day</p>
+                        <p id="todayDate">Date</p>
                     </div>
                     <div class="main_layer">
                         <p id="city_name">Output will be shown here</p>
@@ -46,51 +46,7 @@
     {{>footer}}
 
     <script src="JS/main.js"></script>
-
-    <script>
-
-        const getCurrentDay = () => {
-            let weekday = ["Sunday","Monday","Tuesday","Wednesday","Thursday","Friday","Saturday"];
-
-            let currentTime = new Date();
-            let days = weekday[currentTime.getDay()];
-            let day = document.getElementById('day');
-
-            day.innerText = days;
-        };
-
-        getCurrentDay();
-
-        const getCurrentTime = () => {
-            let months = ["January","February","March","April","May","June","July","August","September","October","November","December"];
-
-            var now = new Date();
-            var month = months[now.getMonth()];
-            var date = now.getDate();
-
-            let hours = now.getHours();
-            let mins = now.getMinutes();
-
-            let period = "AM"
-
-            if(hours > 11){
-                period = "PM";
-                if(hours > 12){
-                    hours -= 12;
-                }
-            }
-
-            if(mins < 10){
-                mins = "0" + mins;
-            }
-            let date_today = document.getElementById('todayDate')
-
-            date_today.innerText = `${month} ${date} | ${hours}:${mins}${period}` 
-        };
-
-        getCurrentTime();
-
-    </script>
+    
 </body>
 
 </html>
