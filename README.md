@@ -1,6 +1,6 @@
 # Weather Website
 
-This simple weather website uses Node.js, Express, and OpenWeatherMap's API. Check out the weather in your area using this website.
+This simple weather website has been made using HBS, CSS, and JavaScript in the front-end, and Node.js and Express.js for the back-end. Weather is fetched using OpenWeatherMap's API. Check out the weather in your area using this website.
 
 ## Steps to use it
 
